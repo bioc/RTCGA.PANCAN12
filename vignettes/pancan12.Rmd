@@ -20,8 +20,9 @@ You need RTCGA.PANCAN12 package to use PANCAN12 data from Cancer Genome Browser.
 
 ```{r}
 ## try http:// if https:// URLs are not supported
-source("https://bioconductor.org/biocLite.R")
-biocLite("RTCGA.PANCAN12")
+if (!requireNamespace("BiocManager", quietly=TRUE))
+    install.packages("BiocManager")
+BiocManager::install("RTCGA.PANCAN12")
 # or try devel version
 require(devtools)
 if (!require(RTCGA.PANCAN12)) {

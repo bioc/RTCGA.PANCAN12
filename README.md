@@ -22,6 +22,6 @@ To install Bioconductor development version use (the same as GitHub development 
 BiocInstaller::useDevel() # swiches to devel branchof Bioconductor, 
 # skip BiocInstaller::useDevel() if you want release version
 source("https://bioconductor.org/biocLite.R") # downloads bioClite function
-biocLite("RTCGA.PANCAN12") # installs a package
+BiocManager::install("RTCGA.PANCAN12") # installs a package
 ````
 
