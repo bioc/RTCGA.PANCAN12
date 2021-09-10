@@ -1,7 +1,7 @@
 Package: RTCGA.PANCAN12
 Type: Package
 Title: PanCan 12 from Genome Cancer Browser
-Version: 1.21.0
+Version: 1.21.1
 Date: 2015-11-10
 Author: Przemyslaw Biecek <przemyslaw.biecek@gmail.com>
 Maintainer: Marcin Kosinski <m.p.kosinski@gmail.com>
@@ -13,7 +13,9 @@ Roxygen: list(wrap = TRUE)
 Repository: Bioconductor
 BugReports: https://github.com/RTCGA/RTCGA/issues
 Depends: R (>= 3.3.0), RTCGA
-Suggests: knitr
+Suggests: 
+		knitr,
+		rmarkdown
 biocViews: AnnotationData
 VignetteBuilder: knitr
 NeedsCompilation: no
